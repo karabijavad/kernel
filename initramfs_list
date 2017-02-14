@@ -1,0 +1,9 @@
+
+#####################
+# ./initramfs
+# Last modified: 1487102503.8446337590
+
+dir /bin 755 0 0
+file /bin/busybox ./initramfs/bin/busybox 755 1000 1000
+slink /init ./bin/busybox 777 1000 1000
+dir /dev 755 1000 1000
